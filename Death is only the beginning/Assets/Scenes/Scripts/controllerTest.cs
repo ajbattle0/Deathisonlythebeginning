@@ -23,6 +23,14 @@ public class controllerTest : MonoBehaviour
             GameEvents.BoatStop();
             running = true;
         }
+        if (Input.GetKeyDown(KeyCode.L) && !running)
+        {
+            GameEvents.OpenPuzzle();
+        }
+        if (Input.GetKeyDown(KeyCode.O) && !running)
+        {
+            GameEvents.ClosePuzzle();
+        }
         if (running)
         {
             timer += Time.deltaTime;

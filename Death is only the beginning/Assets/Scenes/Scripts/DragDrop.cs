@@ -27,8 +27,9 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, I
 
     public void OnDrag(PointerEventData eventData)
     {
-        RectTransformUtility.ScreenPointToLocalPointInRectangle(myCanvas.transform as RectTransform, Input.mousePosition, myCanvas.worldCamera, out pos);
-        transform.position = myCanvas.transform.TransformPoint(pos);
+        //RectTransformUtility.ScreenPointToLocalPointInRectangle(myCanvas.transform as RectTransform, Input.mousePosition, myCanvas.worldCamera, out pos);
+        //transform.position = myCanvas.transform.TransformPoint(pos);
+        rectTransform.anchoredPosition += eventData.delta / myCanvas.scaleFactor;
         canvasGroup.alpha = 0.6f;
         parentCanvasGroup.blocksRaycasts = false;
     }

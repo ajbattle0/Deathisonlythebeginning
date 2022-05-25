@@ -53,7 +53,7 @@ public class puzzleController : MonoBehaviour
         {
             while (puzzleCanvasGroup.alpha < 1)
             {
-                Debug.Log(puzzleCanvasGroup.alpha);
+
                 puzzleCanvasGroup.alpha += Time.deltaTime;
                 yield return null;
             }

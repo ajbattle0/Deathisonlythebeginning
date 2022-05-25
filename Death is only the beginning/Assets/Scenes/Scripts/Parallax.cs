@@ -25,16 +25,7 @@ public class Parallax : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.X) && !stopping && Moving)
-        {
-            stopping = true;
-            StartCoroutine("StopParallaxSmooth");
-        }
-        else if (Input.GetKeyDown(KeyCode.X) && !starting && !Moving)
-        {
-            starting = true;
-            StartCoroutine("StartParallaxSmooth");
-        }
+        
         transform.position = new Vector3(transform.position.x  - (currentParrallax * Time.deltaTime)  ,transform.position.y, transform.position.z);
         if(transform.position.x < -35f)
         {
@@ -43,13 +34,17 @@ public class Parallax : MonoBehaviour
     }
     IEnumerator StopParallaxSmooth()
     {
+        yield return new WaitForSeconds(4);
         var startParallax = currentParrallax;
         float waitTime = 0;
         while (waitTime < stopTime)
         {
-            currentParrallax = Mathf.Lerp(startParallax, 0f, (waitTime / stopTime));
-            yield return null;
+            
             waitTime += Time.deltaTime;
+            currentParrallax = Mathf.Lerp(startParallax, 0f, (waitTime / stopTime));
+            
+            
+            yield return null;
         }
         currentParrallax = 0f;
         Moving = false;
@@ -57,6 +52,7 @@ public class Parallax : MonoBehaviour
     }
     IEnumerator StartParallaxSmooth()
     {
+       
         var startParallax = 0f;
         float waitTime = 0;
         while (waitTime < stopTime)
@@ -69,5 +65,23 @@ public class Parallax : MonoBehaviour
         Moving = true;
         starting = false;
     }
+    public void StartParallax()
+    {
+        StartCoroutine(StartParallaxSmooth());
+    }
+    public void StopParallax()
+    {
+        StartCoroutine(StopParallaxSmooth());
+    }
+    private void OnEnable()
+    {
+        GameEvents.OnStartBoat += StartParallax;
+        GameEvents.OnStopBoat += StopParallax;
+    }
+    private void OnDisable()
+    {
 
+        GameEvents.OnStartBoat -= StartParallax;
+        GameEvents.OnStopBoat -= StopParallax;
+    }
 }

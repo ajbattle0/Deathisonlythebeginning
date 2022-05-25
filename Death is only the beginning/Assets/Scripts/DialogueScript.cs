@@ -57,9 +57,9 @@ public class DialogueScript : MonoBehaviour
             Endgametime = Endgametime + 1;
 
         }
-        if (CollarTime2 > 1000)
+        if (CollarTime > 1000)
         {
-            Dogcollar2.SetActive(false);
+            Dogcollar.SetActive(false);
         }
     }
 
@@ -80,11 +80,11 @@ public class DialogueScript : MonoBehaviour
         Endtimer = true;
     }
 
-
+    
     [YarnCommand("moveBoat")]
     public void MoveBoat()
     {
-        //Invoke("GameEvents.BoatStart", 1.0f);
+        //GameEvents.BoatStart();
         Debug.Log("BOAT IS MOVING");
         //ChatScreen.SetActive(false);
     }
@@ -92,7 +92,7 @@ public class DialogueScript : MonoBehaviour
         [YarnCommand("stopBoat")]
     public void StopBoat()
     {
-       // Invoke("GameEvents.BoatStart", 1.0f);
+       //GameEvents.BoatStop();
         Debug.Log("BOAT IS NOT MOVING");
         //ChatScreen.SetActive(false);  
     }

@@ -36,6 +36,11 @@ public class SceneChangeScript : MonoBehaviour
         SceneManager.LoadScene("Part4_FavouriteSpot");
     }
 
+    public void LoadEndCredits()
+    {
+        SceneManager.LoadScene("ENDCREDITS");
+    }
+
     public void QuitGame()
     {
         Application.Quit();

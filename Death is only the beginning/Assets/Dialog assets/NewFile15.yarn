@@ -1,0 +1,84 @@
+title: Intro
+tags: 
+colorID: 8
+position: -452,-26
+---
+Dog: Wow, I've never been on a boat before! Is this thing supposed to move?
+Ferrywoman: You'll have to pay a toll for your passage – what can you give me?
+Dog: Will this collar do? 
+<<displayBlankCollarImage DialogueSystem1>> 
+Ferrywoman: Ah. It looks as though your name is missing. Don't worry - you will rediscover it on this journey.
+<<moveBoat DialogueSystem1>>
+===
+title: Location1Start
+tags: 
+colorID: 6
+position: -231,-26
+---
+// Boat comes to a stop in front of the pound location
+<<stopBoat DialogueSystem1>>
+
+Dog: It was loud, scary, and cold here... so much barking. I can’t remember how many nights I spent curled up alone, wondering if this was what life would be like forever...
+
+// Display polaroid jigsaw puzzle for the player to solve
+<<startPuzzle1 DialogueSystem1>>
+===
+title: Location2Start
+tags: 
+colorID: 8
+position: 213,-30
+---
+<<stopBoat DialogueSystem1>>
+Dog: We were best friends in no time at all! 
+So many great days here, chasing my favourite yellow ball, running through the long grass, splashing in puddles…
+<<startPuzzle2 DialogueSystem1>>
+===
+title: Location3Start
+tags: 
+colorID: 8
+position: 461,-240
+---
+<<stopBoat DialogueSystem1>>
+Dog: We started to spend less time at the park… I wasn’t sure why.
+<<startPuzzle3 DialogueSystem1>>
+===
+title: Location4Start
+tags: 
+colorID: 0
+position: 761,-26
+---
+<<stopBoat DialogueSystem1>>
+Owner: It looks like you finally remembered me? I never forgot you. 
+Now, let’s get your nametag back where it belongs.
+<<displayCollarWithName DialogueSystem1>>
+Owner: That's better. I knew we wouldn't be apart for long.
+<<displayFinalPolaroid DialogueSystem1>>
+===
+title: Location1End
+tags: 
+colorID: 0
+position: -7,-26
+---
+Dog: The day my owner came for me! I remember the bumpy car journey, and all the treats when we arrived at the strange, new house. 
+I wasn’t sure if I’d fit in.
+
+<<moveBoat DialogueSystem1>>
+===
+title: Location2End
+tags: 
+colorID: 8
+position: 430,-30
+---
+Dog: It felt so good to finally have a home – a place where I belonged! 
+Everything was perfect.
+<<moveBoat DialogueSystem1>>
+===
+title: Location3End
+tags: 
+colorID: 0
+position: 675,-240
+---
+Dog: I missed chasing my yellow ball, but nothing beat curling up next to my owner on the sofa while they read the paper or watched TV. 
+We spent so many happy hours like this, until…
+<<moveBoat DialogueSystem1>>
+===

@@ -6,21 +6,24 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/scenes/MainMenu.unity
+    path: Assets/Scenes/MainMenu.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/scenes/Part1_Introduction.unity
+    path: Assets/Scenes/Part1_Introduction.unity
     guid: 825f5098244fff64389abfba1b2acd77
   - enabled: 1
-    path: Assets/Scenes/scenes/Part2_Dogpound.unity
+    path: Assets/Scenes/Part2_Dogpound.unity
     guid: 3c78cc5c9a3af8e4cb9b6bf6f7f8525b
   - enabled: 1
-    path: Assets/Scenes/scenes/Part3_BallPark.unity
+    path: Assets/Scenes/Part3_BallPark.unity
     guid: 960a971fea08ef74e8aa2338108fef9b
   - enabled: 1
-    path: Assets/Scenes/scenes/Part4_Favouritespot.unity
+    path: Assets/Scenes/Part4_FavouriteSpot.unity
     guid: 0755e4a5a8987524ca081d09964df4cb
   - enabled: 1
-    path: Assets/Scenes/scenes/Part5_End.unity
+    path: Assets/Scenes/Part5_End.unity
     guid: bd2a0a09d969c214c92d08c8555d554e
+  - enabled: 1
+    path: Assets/Scenes/ENDCREDITS.unity
+    guid: 45c7aac58418f814db076b4fde3fd7c1
   m_configObjects: {}

@@ -1,0 +1,75 @@
+title: ChatTree
+tags: 
+colorID: 0
+position: 13,-1548
+---
+Bowie: Whats on your mind?
+-> Stress
+Bowie: You look a little stressed?
+    ->Kind of?
+        Bowie: I've been very stressed myself, cocaine didn't help, it escalated the stress. Getting out in nature, the garden helps. Do you ever write your thoughts down?
+        ->Sometimes
+            Bowie: That's great.
+        ->Never
+            Bowie: well you should do.
+        Bowie: Journaling is great for anxiety, it gives you a chance to express your feelings. You can get an online journal or write with Biro, you can start one after you've guided me through the maze.
+        [[Got to maze|Directtomaze1]]
+        [[No thanks|Goodbye]] 
+    ->Not really?
+        Bowie: Come on, you will be after the maze task!
+        [[Got to maze|Directtomaze1]]
+        [[Some othertime|Goodbye]] 
+-> The Garden
+    Bowie:So what do you think about the garden, still a bit dead?
+    ->Yes
+        Bowie: Matters got out of control, its been vertualy left as wasteland. All the plastics waste came in over the last decade, looks to be mounting. What do you think we need more of?
+        -> Trees
+            Bowie: they have been badly managed, weeds have taken over. More mistletoe and wild garlic for foraging would be great.
+            Bowie: To be honest, the fruit goes to waste, people don't tend to pick to eat anymore; cellophane wrapped means clean. When I was growing up we were glad of what food was available, rationing was still going on. Although there wasn't many fruit trees in Brixton, but there were in Yorkshire.
+        -> Animals
+            Bowie: Yes, we used to have so many more, you get the odd badger through eating the rotten apples. Pheasants would be good, no one is teaching them to fly, Sunday lunch.
+        -> Insects
+            Yes, I've already requested spiders from Mars, the bees have diminished greatly. What tending of the foliage has included pesticides, killing off our stripy pollinators.
+    ->No
+        Bowie: I think it could go a few more decades to get back to paradise and perhaps some spiders from Mars.
+    Bowie: I could use a hand in maze if you like? The crystals in the maze would help things around here grow and mend.
+    [[Got to maze|Directtomaze1]]
+    [[Some othertime|Goodbye]] 
+-> Tell me about your past
+    Bowie: So do you remember Lennon being shot?
+    ->Er No
+        Bowie: He was a great influence on my writing, I still think about him sometimes. I reminisce about Ziggy as well. Oh, I know, didn't I used to be Ziggy? I've had many persona's over the decades, I am going to give you one: Major Tom, come on to the maze.
+        [[Got to maze|Directtomaze1]]
+        [[Some othertime|Goodbye]] 
+    ->Yes, I think so
+        Bowie: That's diabolical! I have nothing further to say, go to the maze.
+        [[Got to maze|Directtomaze1]]
+        [[Some othertime|Goodbye]]
+===
+title: Goodbye
+tags: 
+colorID: 0
+position: -237,-1541
+---
+Bowie: Thanks for stopping by have a nice day.
+===
+title: Directtomaze1
+tags: 
+colorID: 0
+position: -1,-1297
+---
+Bowie: Come on I'll talk you through what you have to do for the maze.
+Bowie: So, your Major Tom. I hope you don't think that's sexist or patriarchal, I can't be bothered with feminism. When I say, 'Ground control to Major Tom' that's your cue to go. You basically use the arrow keys to go forward, backward, left and write. Move me around till we get out of the maze. When you see a gem you pick it up with the enter key. Ready, lets go!
+Bowie: Ground control to Mr Tom
+===
+title: Start
+tags: 
+colorID: 0
+position: -6,-1957
+---
+Bowie: Hey you looking at me through your phone!
+->Hi can we talk?
+    <<jump ChatTree>>
+->Goodbye
+    <<jump Goodbye>>
+===

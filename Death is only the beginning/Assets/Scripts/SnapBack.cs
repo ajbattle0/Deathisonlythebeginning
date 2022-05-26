@@ -11,8 +11,10 @@ public class SnapBack : MonoBehaviour, IDropHandler
         if (eventData.pointerDrag != null)
         {
             eventData.pointerDrag.transform.position = eventData.pointerDrag.GetComponent<DragDrop>().prevTrasformPos;
+            Debug.Log("hi");
         }
     }
+    
 
 
 }

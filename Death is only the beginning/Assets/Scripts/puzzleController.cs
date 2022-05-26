@@ -2,12 +2,18 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class puzzleController : MonoBehaviour
 {
     [SerializeField] GameObject puzzleBoxes;
     [SerializeField] GameObject dragDropCatcher;
     [SerializeField] CanvasGroup puzzleCanvasGroup;
+    [SerializeField] DialogueScript dialogueScript;
+    [SerializeField] int scene;
+
+    [SerializeField] Canvas UiCanvas;
+    
 
     private void OnEnable()
     {
@@ -19,7 +25,7 @@ public class puzzleController : MonoBehaviour
     {
         GameEvents.OnOpenPuzzle -= TransitionPuzzleIIn;
         GameEvents.OnClosePuzzle -= TransitionPuzzleOut;
-
+        
     }
 
     private void TransitionPuzzleOut()
@@ -37,7 +43,7 @@ public class puzzleController : MonoBehaviour
     }
     IEnumerator Fade()
     {
-         
+        yield return new WaitForSeconds(5);
         if(puzzleCanvasGroup.alpha == 1)
         {
             while(puzzleCanvasGroup.alpha > 0)
@@ -48,6 +54,9 @@ public class puzzleController : MonoBehaviour
             puzzleCanvasGroup.alpha = 0;
             puzzleBoxes.SetActive(false);
             dragDropCatcher.SetActive(false);
+            yield return new WaitForSeconds(2);
+            WhichScene();
+
         }
         else
         {
@@ -58,6 +67,24 @@ public class puzzleController : MonoBehaviour
                 yield return null;
             }
             puzzleCanvasGroup.alpha = 1;
+
+        }
+    }
+    void WhichScene()
+    {
+        switch (scene)
+        {
+            case 1:
+                dialogueScript.PlayLocation1EndText();
+                break;
+            case 2:
+                dialogueScript.PlayLocation2EndText();
+
+                break;
+            case 3:
+                dialogueScript.PlayLocation3EndText();
+                break;
+            
         }
     }
 

@@ -11,6 +11,10 @@ public class Parallax : MonoBehaviour
     public bool starting;
     public bool Moving;
     public float stopTime;
+    static bool introDiologPlayed;
+
+    [SerializeField] DialogueScript dialogueScript;
+    [SerializeField] int scene; 
 
 
     // Start is called before the first frame update
@@ -18,7 +22,7 @@ public class Parallax : MonoBehaviour
     {
         startpos = transform.position.x;
         length = GetComponent<SpriteRenderer>().bounds.size.x;
-        currentParrallax = parrallaxAmount;
+        currentParrallax = 0;
         Moving = true;
     }
 
@@ -49,6 +53,8 @@ public class Parallax : MonoBehaviour
         currentParrallax = 0f;
         Moving = false;
         stopping = false;
+        yield return new WaitForSeconds(2);
+        WhichScene();
     }
     IEnumerator StartParallaxSmooth()
     {
@@ -75,13 +81,43 @@ public class Parallax : MonoBehaviour
     }
     private void OnEnable()
     {
-        GameEvents.OnStartBoat += StartParallax;
-        GameEvents.OnStopBoat += StopParallax;
+        GameEvents.OnBoatDeparter += StartParallax;
+        GameEvents.OnBoatArrival += StopParallax;
+        GameEvents.OnBoatStart += StartParallax;
+        GameEvents.OnBoatStop += StopParallax;
     }
     private void OnDisable()
     {
 
-        GameEvents.OnStartBoat -= StartParallax;
-        GameEvents.OnStopBoat -= StopParallax;
+        GameEvents.OnBoatDeparter -= StartParallax;
+        GameEvents.OnBoatArrival -= StopParallax;
+        GameEvents.OnBoatStart -= StartParallax;
+        GameEvents.OnBoatStop -= StopParallax;
+    }
+    void WhichScene()
+    {
+        if (!introDiologPlayed)
+        {
+            switch (scene)
+            {
+                case 1:
+                    dialogueScript.PlayLocation1StartText();
+                    introDiologPlayed = true;
+                    break;
+                case 2:
+                    dialogueScript.PlayLocation2StartText();
+                    introDiologPlayed = true;
+                    break;
+                case 3:
+                    dialogueScript.PlayLocation3StartText();
+                    introDiologPlayed = true;
+                    break;
+                case 4:
+                    dialogueScript.PlayLocation4StartText();
+                    introDiologPlayed = true;
+                    break;
+            }
+        }
+        
     }
 }

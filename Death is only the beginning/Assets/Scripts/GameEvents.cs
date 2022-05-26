@@ -5,8 +5,10 @@ using UnityEngine;
 public class GameEvents : MonoBehaviour
 {
     public delegate void MovementAction();
-    public static event MovementAction OnStartBoat;
-    public static event MovementAction OnStopBoat;
+    public static event MovementAction OnBoatDeparter;
+    public static event MovementAction OnBoatArrival;
+    public static event MovementAction OnBoatStart;
+    public static event MovementAction OnBoatStop;
     public static event MovementAction OnOpenPuzzle;
     public static event MovementAction OnClosePuzzle;
 
@@ -14,16 +16,30 @@ public class GameEvents : MonoBehaviour
 
     public static void BoatStart()
     {
-        if (OnStartBoat != null)
+        if (OnBoatStart != null)
         {
-            OnStartBoat();
+            OnBoatStart();
         }
     }
     public static void BoatStop()
     {
-        if (OnStopBoat != null)
+        if (OnBoatStop != null)
         {
-            OnStopBoat();
+            OnBoatStop();
+        }
+    }
+    public static void BoatDeparter()
+    {
+        if (OnBoatDeparter != null)
+        {
+            OnBoatDeparter();
+        }
+    }
+    public static void BoatArrival()
+    {
+        if (OnBoatArrival != null)
+        {
+            OnBoatArrival();
         }
     }
     public static void OpenPuzzle()
@@ -40,4 +56,5 @@ public class GameEvents : MonoBehaviour
             OnClosePuzzle();
         }
     }
+ 
 }

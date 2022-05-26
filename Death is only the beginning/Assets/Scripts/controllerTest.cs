@@ -15,12 +15,12 @@ public class controllerTest : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.G) && !running)
         {
-            GameEvents.BoatStart();
+            GameEvents.BoatDeparter();
             running = true;
         }
         if (Input.GetKeyDown(KeyCode.F) && !running)
         {
-            GameEvents.BoatStop();
+            GameEvents.BoatArrival();
             running = true;
         }
         if (Input.GetKeyDown(KeyCode.L) && !running)

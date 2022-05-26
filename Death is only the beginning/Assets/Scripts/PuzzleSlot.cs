@@ -57,6 +57,7 @@ public class PuzzleSlot : MonoBehaviour, IDropHandler
             if(numerCorrect == allPuzzleSlots.Length)
             {
                 WinImage.SetActive(true);
+                GameEvents.ClosePuzzle();
             }
         }
     }

@@ -21,7 +21,7 @@ public class DialogueScript : MonoBehaviour
     public GameObject FinalPolaroid;
     public GameObject EndButton;
 
-
+    public bool isInIntro;
 
     // Start is called before the first frame update
     void Start()
@@ -36,30 +36,34 @@ public class DialogueScript : MonoBehaviour
     {
         if (CollarTimerOn == true)
         {
-            CollarTime = CollarTime +1;
+            CollarTime = CollarTime +Time.deltaTime;
           
         }
-        if (CollarTime2 > 800)
+        if (CollarTime2 > 5)
         {
             Dogcollar2.SetActive(false);
+            CollarTimerOn2 = false;
+
         }
         if (CollarTimerOn2 == true)
         {
-            CollarTime2 = CollarTime2 + 1;
+            CollarTime2 = CollarTime2 + Time.deltaTime;
 
         }
-        if (Endgametime > 1000)
+        if (Endgametime > 5)
         {
             EndButton.SetActive(true);
+            Endtimer = false;
         }
         if (Endtimer == true)
         {
-            Endgametime = Endgametime + 1;
+            Endgametime = Endgametime + Time.deltaTime;
 
         }
-        if (CollarTime > 1000)
+        if (CollarTime > 5)
         {
             Dogcollar.SetActive(false);
+            CollarTimerOn = false;
         }
     }
 
@@ -84,9 +88,24 @@ public class DialogueScript : MonoBehaviour
     [YarnCommand("moveBoat")]
     public void MoveBoat()
     {
-        //GameEvents.BoatStart();
+        if (isInIntro)
+        {
+            GameEvents.BoatStart();
+            isInIntro = false;
+        }
+        else
+        {
+            GameEvents.BoatDeparter();
+        }
+        
+        
         Debug.Log("BOAT IS MOVING");
         //ChatScreen.SetActive(false);
+    }
+    IEnumerator arriveAtLocation()
+    {
+        yield return new WaitForSeconds(5);
+        GameEvents.BoatArrival();
     }
       
         [YarnCommand("stopBoat")]
@@ -99,25 +118,19 @@ public class DialogueScript : MonoBehaviour
     [YarnCommand("startPuzzle1")]
     public void StartPuzzle1()
     {
-        // Invoke("GameEvents.BoatStart", 1.0f);
-        Debug.Log("Puzzle ONE IS STARTING");
-        //ChatScreen.SetActive(false);  
+        GameEvents.OpenPuzzle();
     }
 
     [YarnCommand("startPuzzle2")]
     public void StartPuzzle2()
     {
-        // Invoke("GameEvents.BoatStart", 1.0f);
-        Debug.Log("Puzzle TWO IS STARTING");
-        //ChatScreen.SetActive(false);  
+        GameEvents.OpenPuzzle();
     }
 
     [YarnCommand("startPuzzle3")]
     public void StartPuzzle3()
     {
-        // Invoke("GameEvents.BoatStart", 1.0f);
-        Debug.Log("Puzzle Three IS STARTING");
-        //ChatScreen.SetActive(false);  
+        GameEvents.OpenPuzzle();
     }
 
     [YarnCommand("displayCollarWithName")]
@@ -140,10 +153,12 @@ public class DialogueScript : MonoBehaviour
     //SCENE 1
     public void PlayLocation1StartText()
     {
+        Debug.Log("HI");
         ChatScreen.SetActive(true);
         if (IsInDialog == false)
         {
             Chat.StartDialogue("Location1Start");
+            
         }
     }
 

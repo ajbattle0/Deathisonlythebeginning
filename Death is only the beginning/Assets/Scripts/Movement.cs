@@ -7,18 +7,18 @@ public class Movement : MonoBehaviour
     public Vector3 middlePos;
     public Vector3 endPos;
     public float duration ;
-
+    [SerializeField] bool intro;
     
     // Start is called before the first frame update
     private void OnEnable()
     {
-        GameEvents.OnStartBoat += MovePuzzleOut;
-        GameEvents.OnStopBoat += MovePuzzleIn;
+        GameEvents.OnBoatDeparter += MovePuzzleOut;
+        GameEvents.OnBoatArrival += MovePuzzleIn;
     }
     private void OnDisable()
     {
-        GameEvents.OnStopBoat -= MovePuzzleIn;
-        GameEvents.OnStartBoat -= MovePuzzleOut;
+        GameEvents.OnBoatArrival -= MovePuzzleIn;
+        GameEvents.OnBoatDeparter -= MovePuzzleOut;
     }
     public void MovePuzzleIn()
     {
@@ -43,6 +43,7 @@ public class Movement : MonoBehaviour
     }
     IEnumerator MovePuzzleOutCoro()
     {
+        
         var elapsedTime = 0f;
         var startPos = transform.position;
         while (elapsedTime < duration)

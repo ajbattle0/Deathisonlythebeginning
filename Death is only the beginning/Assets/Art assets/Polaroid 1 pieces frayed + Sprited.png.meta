@@ -1,0 +1,304 @@
+fileFormatVersion: 2
+guid: d24c5adcf5906f64fbe3ce4eefc9b263
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Polaroid 1 pieces frayed _0
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 2012
+        width: 632
+        height: 565
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -275, y: -282.5}
+        - {x: -316, y: -282.5}
+        - {x: -316, y: 282.5}
+        - {x: 316, y: 282.5}
+        - {x: 316, y: 248.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaba177a396f57746a9f4bf29c45eae6
+      internalID: 882905650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Polaroid 1 pieces frayed _1
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 1485
+        width: 894
+        height: 1091
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 197, y: -452.5}
+        - {x: -235, y: -545.5}
+        - {x: -447, y: -545.5}
+        - {x: -447, y: 84.5}
+        - {x: 127, y: 545.5}
+        - {x: 172, y: 545.5}
+        - {x: 447, y: 62.5}
+        - {x: 447, y: -166.5}
+        - {x: 418, y: -318.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c2b441f98c0a7841bafa5682cfa6f20
+      internalID: 1996661166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Polaroid 1 pieces frayed _2
+      rect:
+        serializedVersion: 2
+        x: 1285
+        y: 1723
+        width: 971
+        height: 1016
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29.5, y: -508}
+        - {x: -236.5, y: -240}
+        - {x: -485.5, y: 326}
+        - {x: -485.5, y: 508}
+        - {x: 485.5, y: 508}
+        - {x: 485.5, y: -508}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4979171467dbf047a7287bafdedc659
+      internalID: -1606064468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Polaroid 1 pieces frayed _3
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 538
+        width: 649
+        height: 873
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 957d3b701ac59074c94984d6c0e13fb0
+      internalID: -1120301276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Polaroid 1 pieces frayed _4
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 774
+        width: 798
+        height: 1055
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -239, y: -527.5}
+        - {x: -399, y: 227.5}
+        - {x: -80, y: 343.5}
+        - {x: 25, y: 524.5}
+        - {x: 29, y: 527.5}
+        - {x: 399, y: 274.5}
+        - {x: 399, y: 52.5}
+        - {x: -40, y: -527.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41047a2c3c6aa064e8be20ccb7bd7f92
+      internalID: -1587351062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Polaroid 1 pieces frayed _5
+      rect:
+        serializedVersion: 2
+        x: 1153
+        y: 574
+        width: 945
+        height: 981
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -472.5, y: -490.5}
+        - {x: -472.5, y: -352.5}
+        - {x: 28.5, y: 280.5}
+        - {x: 144.5, y: 431.5}
+        - {x: 472.5, y: 490.5}
+        - {x: 472.5, y: -490.5}
+      - - {x: -403.5, y: 284.5}
+        - {x: -403.5, y: 307.5}
+        - {x: -395.5, y: 307.5}
+        - {x: -395.5, y: 284.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac42a0840f903d04d92624c8a9debdc8
+      internalID: 951116209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Polaroid 1 pieces frayed _2: -1606064468
+      Polaroid 1 pieces frayed _1: 1996661166
+      Polaroid 1 pieces frayed _0: 882905650
+      Polaroid 1 pieces frayed _3: -1120301276
+      Polaroid 1 pieces frayed _5: 951116209
+      Polaroid 1 pieces frayed _4: -1587351062
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

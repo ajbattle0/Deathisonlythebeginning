@@ -1,0 +1,305 @@
+fileFormatVersion: 2
+guid: 9eb22ab6a46ddf44982e983180736593
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cuddle Polaroid torn and frayed_0
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 2035
+        width: 564
+        height: 730
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5466c08f471227645bf3170bc09ddc9f
+      internalID: -1462476552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cuddle Polaroid torn and frayed_1
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 2210
+        width: 1302
+        height: 599
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -608, y: -299.5}
+        - {x: -651, y: -235.5}
+        - {x: -651, y: -146.5}
+        - {x: -357, y: 289.5}
+        - {x: 651, y: 294.5}
+        - {x: 651, y: 89.5}
+        - {x: 400, y: -88.5}
+        - {x: 106, y: -98.5}
+        - {x: 111, y: -299.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 280c8dfa5a9b0bd4eac4835214ddcbae
+      internalID: -1984726856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cuddle Polaroid torn and frayed_2
+      rect:
+        serializedVersion: 2
+        x: 1237
+        y: 954
+        width: 917
+        height: 1321
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -210.5, y: -401.5}
+        - {x: -257.5, y: -296.5}
+        - {x: -358.5, y: -660.5}
+        - {x: -439.5, y: -660.5}
+        - {x: -458.5, y: -161.5}
+        - {x: -452.5, y: 595.5}
+        - {x: -142.5, y: 574.5}
+        - {x: -193.5, y: 660.5}
+        - {x: -134.5, y: 660.5}
+        - {x: 153.5, y: 502.5}
+        - {x: 458.5, y: 111.5}
+        - {x: 458.5, y: -660.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f75d8149c8f325740b1ab4f0b9e23d77
+      internalID: -1926452100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cuddle Polaroid torn and frayed_3
+      rect:
+        serializedVersion: 2
+        x: 1746
+        y: 1531
+        width: 627
+        height: 967
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 313.5, y: -474.5}
+        - {x: -313.5, y: 190.5}
+        - {x: -312.5, y: 320.5}
+        - {x: 303.5, y: 475.5}
+        - {x: 313.5, y: 336.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15dc4c6ec9cffba42b732154289d12e0
+      internalID: -360502223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cuddle Polaroid torn and frayed_4
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 957
+        width: 764
+        height: 1055
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ab367986d3bf544dba49e6b58611376
+      internalID: 1215160228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cuddle Polaroid torn and frayed_5
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 568
+        width: 1573
+        height: 606
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -786.5, y: -303}
+        - {x: -786.5, y: 31}
+        - {x: -237.5, y: 155}
+        - {x: -144.5, y: 303}
+        - {x: -64.5, y: 303}
+        - {x: -78.5, y: -171}
+        - {x: -56.5, y: -175}
+        - {x: 49.5, y: 166}
+        - {x: 86.5, y: 218}
+        - {x: 148.5, y: 108}
+        - {x: 581.5, y: 1}
+        - {x: 786.5, y: -164}
+        - {x: 786.5, y: -303}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e2a2156db144ed44af602567277e2c5
+      internalID: 2077207131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Cuddle Polaroid torn and frayed_5: 2077207131
+      Cuddle Polaroid torn and frayed_0: -1462476552
+      Cuddle Polaroid torn and frayed_3: -360502223
+      Cuddle Polaroid torn and frayed_1: -1984726856
+      Cuddle Polaroid torn and frayed_4: 1215160228
+      Cuddle Polaroid torn and frayed_2: -1926452100
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

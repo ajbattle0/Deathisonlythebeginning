@@ -267,8 +267,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Return to main Menu
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ed068725b23772444a09cb290f3bac9b, type: 2}
+  m_sharedMaterial: {fileID: 5001976513967647901, guid: ed068725b23772444a09cb290f3bac9b, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -541,8 +541,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: cb22b44846e52344aaa8030be866cf7f, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1024,11 +1024,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "This game was created for the 21.05.2022 Indie.IO 10 day game Jam.\nTeam
-    members:\nAdam \nEloise\nKerrie\nMelly\nWahib "
+  m_text: "This game was created for GameDevt.tv 2022 Game Jam.\nTeam members:\nAdam
+    Battle | Co-producer and Technical Artist | ajbattle.wordpress.com\nKerrie Holland
+    | Co-Producer and UI | Twitter-@scarletshimmer\nEloise Best | Narrative Design
+    | https://eloisebest.portfolio.site/\nDaniel Standring | Lead Programmer  https://dan123496.github.io/index.html\nKit
+    | Character Artist \nArmy of Bears | Composer | https://soundcloud.app.goo.gl/fNYhh\nMelly
+    |  Enviroment Art \nWahib | Character concept artist"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ed068725b23772444a09cb290f3bac9b, type: 2}
+  m_sharedMaterial: {fileID: 5001976513967647901, guid: ed068725b23772444a09cb290f3bac9b, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

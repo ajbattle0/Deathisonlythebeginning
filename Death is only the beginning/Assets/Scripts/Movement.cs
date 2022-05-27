@@ -22,9 +22,9 @@ public class Movement : MonoBehaviour
     }
     public void MovePuzzleIn()
     {
-        StartCoroutine(MovePuzzleInCoro());
+        StartCoroutine(MoveLocationInCoro());
     }
-    IEnumerator MovePuzzleInCoro()
+    IEnumerator MoveLocationInCoro()
     {
         var elapsedTime = 0f;
         var startPos = transform.position;
@@ -43,7 +43,11 @@ public class Movement : MonoBehaviour
     }
     IEnumerator MovePuzzleOutCoro()
     {
-        
+        if (intro)
+        {
+            intro = false;
+            yield break;
+        }
         var elapsedTime = 0f;
         var startPos = transform.position;
         while (elapsedTime < duration)
@@ -53,6 +57,7 @@ public class Movement : MonoBehaviour
             transform.position = Vector3.Lerp(startPos, endPos, Mathf.SmoothStep(0, 1, percentageComplete));
             yield return null;
         }
+        this.gameObject.SetActive(false);
     }
 
 }

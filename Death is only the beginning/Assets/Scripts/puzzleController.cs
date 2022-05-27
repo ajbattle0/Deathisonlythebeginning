@@ -10,11 +10,14 @@ public class puzzleController : MonoBehaviour
     [SerializeField] GameObject dragDropCatcher;
     [SerializeField] CanvasGroup puzzleCanvasGroup;
     [SerializeField] DialogueScript dialogueScript;
-    [SerializeField] int scene;
+    int scene;
 
     [SerializeField] Canvas UiCanvas;
-    
 
+    public void Start()
+    {
+        scene = SceneManager.GetActiveScene().buildIndex;
+    }
     private void OnEnable()
     {
         GameEvents.OnOpenPuzzle += TransitionPuzzleIIn;
@@ -43,18 +46,19 @@ public class puzzleController : MonoBehaviour
     }
     IEnumerator Fade()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(2);
         if(puzzleCanvasGroup.alpha == 1)
         {
-            while(puzzleCanvasGroup.alpha > 0)
+            puzzleBoxes.SetActive(false);
+            dragDropCatcher.SetActive(false);
+            while (puzzleCanvasGroup.alpha > 0)
             {
                 puzzleCanvasGroup.alpha -= Time.deltaTime;
                 yield return null;
             }
             puzzleCanvasGroup.alpha = 0;
-            puzzleBoxes.SetActive(false);
-            dragDropCatcher.SetActive(false);
-            yield return new WaitForSeconds(2);
+            
+            yield return new WaitForSeconds(1);
             WhichScene();
 
         }
@@ -67,7 +71,7 @@ public class puzzleController : MonoBehaviour
                 yield return null;
             }
             puzzleCanvasGroup.alpha = 1;
-
+            GameEvents.ResetParallax();
         }
     }
     void WhichScene()
@@ -76,13 +80,15 @@ public class puzzleController : MonoBehaviour
         {
             case 1:
                 dialogueScript.PlayLocation1EndText();
+                Debug.Log("1");
                 break;
             case 2:
                 dialogueScript.PlayLocation2EndText();
-
+                Debug.Log("2");
                 break;
             case 3:
                 dialogueScript.PlayLocation3EndText();
+                Debug.Log("3");
                 break;
             
         }

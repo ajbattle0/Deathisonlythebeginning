@@ -62,7 +62,7 @@ position: -7,-26
 Dog: The day my owner came for me! I remember the bumpy car journey, and all the treats when we arrived at the strange, new house. 
 I wasn’t sure if I’d fit in.
 
-<<moveBoat DialogueSystem1>>
+<<changeScene DialogueSystem1>>
 ===
 title: Location2End
 tags: 
@@ -71,7 +71,7 @@ position: 430,-30
 ---
 Dog: It felt so good to finally have a home – a place where I belonged! 
 Everything was perfect.
-<<moveBoat DialogueSystem1>>
+<<changeScene DialogueSystem1>>
 ===
 title: Location3End
 tags: 
@@ -80,5 +80,5 @@ position: 675,-240
 ---
 Dog: I missed chasing my yellow ball, but nothing beat curling up next to my owner on the sofa while they read the paper or watched TV. 
 We spent so many happy hours like this, until…
-<<moveBoat DialogueSystem1>>
+<<changeScene DialogueSystem1>>
 ===

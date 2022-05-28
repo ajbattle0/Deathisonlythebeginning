@@ -600,8 +600,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000000089407, y: -40.7}
-  m_SizeDelta: {x: 188.78, y: 106.16}
+  m_AnchoredPosition: {x: -4.4888554, y: -42.143013}
+  m_SizeDelta: {x: 208.90439, y: 114.08167}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &226493372
 MonoBehaviour:
@@ -1512,12 +1512,34 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "This game was created for GameDevt.tv 2022 Game Jam.\nTeam members:\nAdam
-    Battle | Co-producer and Technical Artist | ajbattle.wordpress.com\nKerrie Holland
-    | Co-Producer and UI | Twitter-@scarletshimmer\nEloise Best | Narrative Design
-    | https://eloisebest.portfolio.site/\nDaniel Standring | Lead Programmer  https://dan123496.github.io/index.html\nKit
-    | Character Artist \nArmy of Bears | Composer | https://soundcloud.app.goo.gl/fNYhh\nMelly
-    |  Enviroment Art \nWahib | Character concept artist"
+  m_text: 'This game was created for GameDevt.tv 2022 Game Jam.
+
+    Team members:
+
+    Adam
+    Battle | Co-organiser and Technical Artist | ajbattle.wordpress.com
+
+    Kerrie
+    Holland | Co-organiser and UI | Twitter-@scarletshimmer
+
+    Eloise Best | Narrative
+    Design | https://eloisebest.portfolio.site/
+
+    Daniel Standring | Lead Programmer 
+    https://dan123496.github.io/index.html
+
+    Kit Ellese | Character Artist | Twitter
+    - @kitelle_artist
+
+    Army of Bears | Composer | https://soundcloud.app.goo.gl/fNYhh
+
+    LittleMelly
+    |  Enviroment Art | https://littlemelly.itch.io/
+
+    Liam Ashton | Technical
+    Artist | linkedin.com/in/lrashton
+
+    Wahib | Character concept artist'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ed068725b23772444a09cb290f3bac9b, type: 2}
   m_sharedMaterial: {fileID: 5001976513967647901, guid: ed068725b23772444a09cb290f3bac9b, type: 2}
@@ -2065,8 +2087,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.38170722, y: 75.745384}
-  m_SizeDelta: {x: 188.78, y: 106.16}
+  m_AnchoredPosition: {x: 1.79251, y: 75.966255}
+  m_SizeDelta: {x: 207.25034, y: 115.45732}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1112371501
 MonoBehaviour:

@@ -1267,12 +1267,34 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "This game was created for GameDevt.tv 2022 Game Jam.\nTeam members:\nAdam
-    Battle | Co-producer and Technical Artist | ajbattle.wordpress.com\nKerrie Holland
-    | Co-Producer and UI | Twitter-@scarletshimmer\nEloise Best | Narrative Design
-    | https://eloisebest.portfolio.site/\nDaniel Standring | Lead Programmer  https://dan123496.github.io/index.html\nKit
-    | Character Artist \nArmy of Bears | Composer | https://soundcloud.app.goo.gl/fNYhh\nMelly
-    |  Enviroment Art \nWahib | Character concept artist"
+  m_text: 'This game was created for GameDevt.tv 2022 Game Jam.
+
+    Team members:
+
+    Adam
+    Battle | Co-organiser and Technical Artist | ajbattle.wordpress.com
+
+    Kerrie
+    Holland | Co-organiser and UI | Twitter-@scarletshimmer
+
+    Eloise Best | Narrative
+    Design | https://eloisebest.portfolio.site/
+
+    Daniel Standring | Lead Programmer 
+    https://dan123496.github.io/index.html
+
+    Kit Ellese | Character Artist | Twitter
+    - @kitelle_artist
+
+    Army of Bears | Composer | https://soundcloud.app.goo.gl/fNYhh
+
+    LittleMelly
+    |  Enviroment Art | https://littlemelly.itch.io/
+
+    Liam Ashton | Technical
+    Artist | linkedin.com/in/lrashton
+
+    Wahib | Character concept artist'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ed068725b23772444a09cb290f3bac9b, type: 2}
   m_sharedMaterial: {fileID: 5001976513967647901, guid: ed068725b23772444a09cb290f3bac9b, type: 2}
@@ -1335,7 +1357,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -259.98825, y: 73.53833, z: -355.21558, w: -205.29446}
+  m_margin: {x: -259.98825, y: 62.842957, z: -355.21558, w: -205.29446}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

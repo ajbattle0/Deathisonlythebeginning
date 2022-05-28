@@ -589,6 +589,50 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5661207209973769544, guid: f143a0a753894a84a82099e153ad628f, type: 3}
+      propertyPath: m_text
+      value: 'This game was created for GameDevt.tv 2022 Game Jam.
+
+        Team
+        members:
+
+        Adam Battle | Co-organiser and Technical Artist | ajbattle.wordpress.com
+
+        Kerrie
+        Holland | Co-organiser and UI | Twitter-@scarletshimmer
+
+        Eloise Best
+        | Narrative Design | https://eloisebest.portfolio.site/
+
+        Daniel Standring
+        | Lead Programmer  https://dan123496.github.io/index.html
+
+        Kit Ellese
+        | Character Artist | Twitter - @kitelle_artist
+
+        Army of Bears | Composer
+        | https://soundcloud.app.goo.gl/fNYhh
+
+        LittleMelly |  Enviroment
+        Art | https://littlemelly.itch.io/
+
+        Liam Ashton | Technical Artist
+        | linkedin.com/in/lrashton
+
+        Wahib | Character concept artist'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5661207209973769544, guid: f143a0a753894a84a82099e153ad628f, type: 3}
+      propertyPath: m_margin.y
+      value: 64.17987
+      objectReference: {fileID: 0}
+    - target: {fileID: 5661207209973769544, guid: f143a0a753894a84a82099e153ad628f, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 5001976513967647901, guid: ed068725b23772444a09cb290f3bac9b, type: 2}
+    - target: {fileID: 5661207209973769544, guid: f143a0a753894a84a82099e153ad628f, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5661207210217303424, guid: f143a0a753894a84a82099e153ad628f, type: 3}
       propertyPath: m_IsActive
       value: 0

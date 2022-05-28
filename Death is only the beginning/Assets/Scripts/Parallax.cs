@@ -13,6 +13,7 @@ public class Parallax : MonoBehaviour
     public bool Moving;
     public float stopTime;
     static bool introDiologPlayed;
+     
     float startXPos;
     Vector3 startpos;
 

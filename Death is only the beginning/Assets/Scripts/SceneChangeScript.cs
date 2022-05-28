@@ -38,6 +38,8 @@ public class SceneChangeScript : MonoBehaviour
 
     public void LoadEndCredits()
     {
+        AudioController.Instance.PlayMusic(AudioController.Instance.happy);
+        AudioController.Instance.StopAmbient();
         SceneManager.LoadScene("ENDCREDITS");
     }
 

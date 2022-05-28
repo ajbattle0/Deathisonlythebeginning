@@ -9,7 +9,7 @@ public class Starter : MonoBehaviour
     public DialogueScript dialogueScript;
     void Start()
     {
-
+        AudioController.Instance.PlayAmbient();
         if(SceneManager.GetActiveScene().buildIndex == 1)
         {
             StartCoroutine(StartIntro());

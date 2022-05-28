@@ -6,24 +6,24 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
+    path: Assets/Scenes/MainScenes/MainMenu.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/Part1_Introduction.unity
-    guid: 825f5098244fff64389abfba1b2acd77
+    path: Assets/Scenes/MainScenes/Part1_Introduction.unity
+    guid: 636b3b2bc026559419712d93332c0623
   - enabled: 1
-    path: Assets/Scenes/Part2_Dogpound.unity
-    guid: 3c78cc5c9a3af8e4cb9b6bf6f7f8525b
+    path: Assets/Scenes/MainScenes/Part2_Dogpound.unity
+    guid: fefb40fc7447dee4cbbe137aad8b496c
   - enabled: 1
-    path: Assets/Scenes/Part3_BallPark.unity
-    guid: 960a971fea08ef74e8aa2338108fef9b
+    path: Assets/Scenes/MainScenes/Part3_BallPark.unity
+    guid: 662c2d673d2d9a34589e6b07df853789
   - enabled: 1
-    path: Assets/Scenes/Part4_FavouriteSpot.unity
-    guid: 0755e4a5a8987524ca081d09964df4cb
+    path: Assets/Scenes/MainScenes/Part4_FavouriteSpot.unity
+    guid: 64b3360c407772440a62fb429ff643b9
   - enabled: 1
-    path: Assets/Scenes/Part5_End.unity
+    path: Assets/Scenes/MainScenes/Part5_End.unity
     guid: bd2a0a09d969c214c92d08c8555d554e
   - enabled: 1
-    path: Assets/Scenes/ENDCREDITS.unity
+    path: Assets/Scenes/MainScenes/ENDCREDITS.unity
     guid: 45c7aac58418f814db076b4fde3fd7c1
   m_configObjects: {}

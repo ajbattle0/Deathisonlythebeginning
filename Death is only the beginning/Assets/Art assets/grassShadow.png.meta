@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6c2386c35ef832f4587251dde149a7a3
+guid: 261873dfded8a0c4cbc3dac025dd9bdd
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -114,7 +114,70 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: grassShadow_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 2100.6667
+        height: 506
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8dbe9951050d9644a069d1d2b1bcfc5
+      internalID: -412575016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grassShadow_1
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 0
+        width: 2100.6667
+        height: 506
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d8189888b00bd8499983c5ce3e2a5c6
+      internalID: -204102295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grassShadow_2
+      rect:
+        serializedVersion: 2
+        x: 4200
+        y: 0
+        width: 2100.6667
+        height: 506
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5faffcd52f6db240a38aa6df8a5ee37
+      internalID: -2080746380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -125,7 +188,10 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      grassShadow_1: -204102295
+      grassShadow_0: -412575016
+      grassShadow_2: -2080746380
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

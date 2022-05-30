@@ -7,10 +7,12 @@ public class Starter : MonoBehaviour
 {
 
     public DialogueScript dialogueScript;
+    public 
     void Start()
     {
         AudioController.Instance.PlayAmbient();
-        if(SceneManager.GetActiveScene().buildIndex == 1)
+        AudioController.Instance.PlayMusic(AudioController.Instance.sad);
+        if (SceneManager.GetActiveScene().buildIndex == 1)
         {
             StartCoroutine(StartIntro());
         }

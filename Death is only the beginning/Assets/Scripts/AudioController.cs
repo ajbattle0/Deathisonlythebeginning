@@ -27,7 +27,11 @@ public class AudioController : MonoBehaviour
         {
             musicSource.clip = music;           
         }
-        musicSource.Play();
+        
+        if (!musicSource.isPlaying)
+        {
+            musicSource.Play();
+        }
     }
     public void StopMusic()
     {     
@@ -39,7 +43,12 @@ public class AudioController : MonoBehaviour
         {
             ambientNoiseSource.clip = music;
         }
-        ambientNoiseSource.Play();
+        if (!ambientNoiseSource.isPlaying)
+        {
+            ambientNoiseSource.Play();
+        }
+        
+
     }
     public void StopAmbient()
     {

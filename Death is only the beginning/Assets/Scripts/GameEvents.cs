@@ -11,6 +11,7 @@ public class GameEvents : MonoBehaviour
     public static event MovementAction OnBoatStop;
     public static event MovementAction OnOpenPuzzle;
     public static event MovementAction OnClosePuzzle;
+    public static event MovementAction OnResetParallax;
 
 
 
@@ -56,5 +57,12 @@ public class GameEvents : MonoBehaviour
             OnClosePuzzle();
         }
     }
- 
+    public static void ResetParallax()
+    {
+        if (OnResetParallax != null)
+        {
+            OnResetParallax();
+        }
+    }
+
 }

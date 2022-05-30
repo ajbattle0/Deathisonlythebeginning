@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Parallax : MonoBehaviour
 {
-    public float startpos, length;
+    public float length;
     public float parrallaxAmount ;
     public float currentParrallax;
     public bool stopping;
@@ -12,15 +13,21 @@ public class Parallax : MonoBehaviour
     public bool Moving;
     public float stopTime;
     static bool introDiologPlayed;
+     
+    float startXPos;
+    Vector3 startpos;
 
     [SerializeField] DialogueScript dialogueScript;
-    [SerializeField] int scene; 
+    int scene; 
 
 
     // Start is called before the first frame update
     void Start()
     {
-        startpos = transform.position.x;
+        scene = SceneManager.GetActiveScene().buildIndex;
+        introDiologPlayed = false;
+        startpos = transform.position;
+        startXPos = transform.position.x;
         length = GetComponent<SpriteRenderer>().bounds.size.x;
         currentParrallax = 0;
         Moving = true;
@@ -85,6 +92,7 @@ public class Parallax : MonoBehaviour
         GameEvents.OnBoatArrival += StopParallax;
         GameEvents.OnBoatStart += StartParallax;
         GameEvents.OnBoatStop += StopParallax;
+        GameEvents.OnResetParallax += ResetThisParallax;
     }
     private void OnDisable()
     {
@@ -93,6 +101,7 @@ public class Parallax : MonoBehaviour
         GameEvents.OnBoatArrival -= StopParallax;
         GameEvents.OnBoatStart -= StartParallax;
         GameEvents.OnBoatStop -= StopParallax;
+        GameEvents.OnResetParallax -= ResetThisParallax;
     }
     void WhichScene()
     {
@@ -103,10 +112,12 @@ public class Parallax : MonoBehaviour
                 case 1:
                     dialogueScript.PlayLocation1StartText();
                     introDiologPlayed = true;
+                    Debug.Log("1");
                     break;
                 case 2:
                     dialogueScript.PlayLocation2StartText();
                     introDiologPlayed = true;
+                    Debug.Log("2");
                     break;
                 case 3:
                     dialogueScript.PlayLocation3StartText();
@@ -119,5 +130,9 @@ public class Parallax : MonoBehaviour
             }
         }
         
+    }
+    void ResetThisParallax()
+    {
+        transform.position = startpos;
     }
 }

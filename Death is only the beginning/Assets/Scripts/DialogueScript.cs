@@ -32,60 +32,65 @@ public class DialogueScript : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        if (CollarTimerOn == true)
-        {
-            CollarTime = CollarTime +Time.deltaTime;
-          
-        }
-        if (CollarTime2 > 5)
-        {
-            Dogcollar2.SetActive(false);
-            CollarTimerOn2 = false;
-
-        }
-        if (CollarTimerOn2 == true)
-        {
-            CollarTime2 = CollarTime2 + Time.deltaTime;
-
-        }
-        if (Endgametime > 5)
-        {
-            EndButton.SetActive(true);
-            Endtimer = false;
-        }
-        if (Endtimer == true)
-        {
-            Endgametime = Endgametime + Time.deltaTime;
-
-        }
-        if (CollarTime > 5)
-        {
-            Dogcollar.SetActive(false);
-            CollarTimerOn = false;
-        }
-    }
+    
 
     [YarnCommand("displayBlankCollarImage")]
     public void DisplayBlankCollarImage()
     {
         Dogcollar.SetActive(true);
         Debug.Log("introduction text finished");
-        CollarTime = 0;
-        CollarTimerOn = true;
+        StartCoroutine(DisplayImage(Dogcollar));
+
+    }
+    [YarnCommand("displayCollarWithName")]
+    public void DisplayBlankCollarwithnameImage()
+    {
+        Dogcollar2.SetActive(true);
+        Debug.Log("showing dog collar w name");
+        StartCoroutine(DisplayImage(Dogcollar2));
     }
     [YarnCommand("displayFinalPolaroid")]
     public void DisplayFinalPolaroid()
     {
         FinalPolaroid.SetActive(true);
         Debug.Log("final polaroid shows");
-        Endgametime = 0;
-        Endtimer = true;
+        StartCoroutine(DisplayImage(EndButton, true));
+    }
+    IEnumerator DisplayImage(GameObject image, bool final =false)
+    {
+        yield return new WaitForSeconds(5);
+        if (final)
+        {
+            image.SetActive(true);
+        }
+        else
+        {
+            image.SetActive(false);
+        }
+        
+    }
+    [YarnCommand("changeScene")]
+    public void ChangeScene()
+    {
+        StartCoroutine(ChangeSceneCoro());
+    }
+    IEnumerator ChangeSceneCoro()
+    {
+        yield return new WaitForSeconds(1);
+        int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
+        if (SceneManager.sceneCountInBuildSettings > nextSceneIndex)
+        {
+            SceneManager.LoadScene(nextSceneIndex);
+
+        }
+        else
+        {
+            Debug.Log(nextSceneIndex);
+            Debug.LogError("sceneNotFound");
+        }
     }
 
-    
-    [YarnCommand("moveBoat")]
+[YarnCommand("moveBoat")]
     public void MoveBoat()
     {
         if (isInIntro)
@@ -97,8 +102,10 @@ public class DialogueScript : MonoBehaviour
         {
             GameEvents.BoatDeparter();
         }
-        
-        
+        StartCoroutine(arriveAtLocation());
+
+
+
         Debug.Log("BOAT IS MOVING");
         //ChatScreen.SetActive(false);
     }
@@ -133,14 +140,7 @@ public class DialogueScript : MonoBehaviour
         GameEvents.OpenPuzzle();
     }
 
-    [YarnCommand("displayCollarWithName")]
-    public void DisplayBlankCollarwithnameImage()
-    {
-        Dogcollar2.SetActive(true);
-        Debug.Log("showing dog collar w name");
-        CollarTime2 = 0;
-        CollarTimerOn2 = true;
-    }
+    
 
     public void PlayIntroductionText()
     {

@@ -20,6 +20,10 @@ public class DialogueScript : MonoBehaviour
     public GameObject Dogcollar2;
     public GameObject FinalPolaroid;
     public GameObject EndButton;
+    public GameObject hoodUp;
+    public GameObject hoodDown;
+    public GameObject sticksNoCollar;
+    public GameObject sticksCollar;
 
     public bool isInIntro;
 
@@ -209,10 +213,28 @@ public class DialogueScript : MonoBehaviour
     //SCENE 4
     public void PlayLocation4StartText()
     {
+        StartCoroutine(QuickFadeIn(hoodUp, hoodDown));
         ChatScreen.SetActive(true);
+
         if (IsInDialog == false)
         {
             Chat.StartDialogue("Location4Start");
+        }
+    }
+    IEnumerator QuickFadeIn(GameObject firstPic, GameObject secondPic)
+    {
+        Color firstPicCol = firstPic.GetComponent<SpriteRenderer>().color;
+        Color SecondPicCol = secondPic.GetComponent<SpriteRenderer>().color;
+        float fadeDuration = 0.3f;
+        float elapsedTime = 0f;
+        while (elapsedTime < fadeDuration)
+        {
+            elapsedTime += Time.deltaTime;
+            firstPicCol.a = Mathf.Lerp(1f, 0f, elapsedTime / fadeDuration);
+            SecondPicCol.a = Mathf.Lerp(0f, 1f, elapsedTime / fadeDuration);
+            firstPic.GetComponent<SpriteRenderer>().color = firstPicCol;
+            secondPic.GetComponent<SpriteRenderer>().color = SecondPicCol;
+            yield return null;
         }
     }
     

@@ -4010,6 +4010,30 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5661207210890011423, guid: f143a0a753894a84a82099e153ad628f, type: 3}
+      propertyPath: m_text
+      value: End Game
+      objectReference: {fileID: 0}
+    - target: {fileID: 5661207211082022544, guid: f143a0a753894a84a82099e153ad628f, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5661207211082022544, guid: f143a0a753894a84a82099e153ad628f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: cb22b44846e52344aaa8030be866cf7f, type: 3}
+    - target: {fileID: 5661207211082022546, guid: f143a0a753894a84a82099e153ad628f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 141.0597
+      objectReference: {fileID: 0}
+    - target: {fileID: 5661207211082022546, guid: f143a0a753894a84a82099e153ad628f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -26
+      objectReference: {fileID: 0}
+    - target: {fileID: 5661207211082022549, guid: f143a0a753894a84a82099e153ad628f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5661207211298613919, guid: f143a0a753894a84a82099e153ad628f, type: 3}
       propertyPath: m_IsActive
       value: 0
